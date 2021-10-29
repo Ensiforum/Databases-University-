@@ -33,5 +33,16 @@ namespace Lab1.Properties {
                 return ((string)(this["BiologistHandbookConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-C216EJ4;Initial Catalog=BiologistHandbook;Integrated Security" +
+            "=True")]
+        public string BiologistHandbookConnectionString1 {
+            get {
+                return ((string)(this["BiologistHandbookConnectionString1"]));
+            }
+        }
     }
 }
