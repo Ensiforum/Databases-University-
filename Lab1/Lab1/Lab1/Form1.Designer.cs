@@ -93,6 +93,8 @@ namespace Lab1
             this.domainsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kingdomsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.phylumsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.resettlementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
@@ -149,25 +151,23 @@ namespace Lab1
             this.domainnameDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nucleuspresenceDataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.label1 = new System.Windows.Forms.Label();
-            this.domainsTableAdapter1 = new Lab1.BiologistHandbookDataSet1TableAdapters.domainsTableAdapter();
-            this.kingdomTableAdapter1 = new Lab1.BiologistHandbookDataSet1TableAdapters.kingdomTableAdapter();
-            this.phylumTableAdapter1 = new Lab1.BiologistHandbookDataSet1TableAdapters.phylumTableAdapter();
-            this.dataGridView7 = new System.Windows.Forms.DataGridView();
             this.bindingNavigator7 = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem6 = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem6 = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem6 = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem6 = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem6 = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator18 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem6 = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem6 = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator19 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem6 = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem6 = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator20 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem6 = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem6 = new System.Windows.Forms.ToolStripButton();
-            this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.resettlementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dataGridView7 = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.domainsTableAdapter1 = new Lab1.BiologistHandbookDataSet1TableAdapters.domainsTableAdapter();
+            this.kingdomTableAdapter1 = new Lab1.BiologistHandbookDataSet1TableAdapters.kingdomTableAdapter();
+            this.phylumTableAdapter1 = new Lab1.BiologistHandbookDataSet1TableAdapters.phylumTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.biologistHandbookDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -201,9 +201,9 @@ namespace Lab1
             ((System.ComponentModel.ISupportInitialize)(this.domainsBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator7)).BeginInit();
             this.bindingNavigator7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).BeginInit();
             this.SuspendLayout();
             // 
             // bindingSource1
@@ -720,23 +720,38 @@ namespace Lab1
             // domainsToolStripMenuItem
             // 
             this.domainsToolStripMenuItem.Name = "domainsToolStripMenuItem";
-            this.domainsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.domainsToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.domainsToolStripMenuItem.Text = "Domains";
             this.domainsToolStripMenuItem.Click += new System.EventHandler(this.domainsToolStripMenuItem_Click);
             // 
             // kingdomsToolStripMenuItem
             // 
             this.kingdomsToolStripMenuItem.Name = "kingdomsToolStripMenuItem";
-            this.kingdomsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.kingdomsToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.kingdomsToolStripMenuItem.Text = "Kingdoms";
             this.kingdomsToolStripMenuItem.Click += new System.EventHandler(this.kingdomsToolStripMenuItem_Click);
             // 
             // phylumsToolStripMenuItem
             // 
             this.phylumsToolStripMenuItem.Name = "phylumsToolStripMenuItem";
-            this.phylumsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.phylumsToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.phylumsToolStripMenuItem.Text = "Phylums";
             this.phylumsToolStripMenuItem.Click += new System.EventHandler(this.phylumsToolStripMenuItem_Click);
+            // 
+            // viewToolStripMenuItem
+            // 
+            this.viewToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.resettlementToolStripMenuItem});
+            this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
+            this.viewToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.viewToolStripMenuItem.Text = "View";
+            // 
+            // resettlementToolStripMenuItem
+            // 
+            this.resettlementToolStripMenuItem.Name = "resettlementToolStripMenuItem";
+            this.resettlementToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.resettlementToolStripMenuItem.Text = "Resettlement";
+            this.resettlementToolStripMenuItem.Click += new System.EventHandler(this.resettlementToolStripMenuItem_Click);
             // 
             // tabControl1
             // 
@@ -1256,38 +1271,6 @@ namespace Lab1
             this.tabPage3.Text = "Choose source";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(163, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Load a database...";
-            // 
-            // domainsTableAdapter1
-            // 
-            this.domainsTableAdapter1.ClearBeforeFill = true;
-            // 
-            // kingdomTableAdapter1
-            // 
-            this.kingdomTableAdapter1.ClearBeforeFill = true;
-            // 
-            // phylumTableAdapter1
-            // 
-            this.phylumTableAdapter1.ClearBeforeFill = true;
-            // 
-            // dataGridView7
-            // 
-            this.dataGridView7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.dataGridView7.Location = new System.Drawing.Point(0, 24);
-            this.dataGridView7.Name = "dataGridView7";
-            this.dataGridView7.Size = new System.Drawing.Size(792, 150);
-            this.dataGridView7.TabIndex = 1;
-            // 
             // bindingNavigator7
             // 
             this.bindingNavigator7.AddNewItem = this.bindingNavigatorAddNewItem6;
@@ -1316,11 +1299,36 @@ namespace Lab1
             this.bindingNavigator7.TabIndex = 2;
             this.bindingNavigator7.Text = "bindingNavigator7";
             // 
+            // bindingNavigatorAddNewItem6
+            // 
+            this.bindingNavigatorAddNewItem6.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem6.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem6.Image")));
+            this.bindingNavigatorAddNewItem6.Name = "bindingNavigatorAddNewItem6";
+            this.bindingNavigatorAddNewItem6.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem6.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem6.Text = "Добавить";
+            // 
+            // bindingNavigatorCountItem6
+            // 
+            this.bindingNavigatorCountItem6.Name = "bindingNavigatorCountItem6";
+            this.bindingNavigatorCountItem6.Size = new System.Drawing.Size(43, 22);
+            this.bindingNavigatorCountItem6.Text = "для {0}";
+            this.bindingNavigatorCountItem6.ToolTipText = "Общее число элементов";
+            // 
+            // bindingNavigatorDeleteItem6
+            // 
+            this.bindingNavigatorDeleteItem6.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem6.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem6.Image")));
+            this.bindingNavigatorDeleteItem6.Name = "bindingNavigatorDeleteItem6";
+            this.bindingNavigatorDeleteItem6.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem6.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem6.Text = "Удалить";
+            // 
             // bindingNavigatorMoveFirstItem6
             // 
             this.bindingNavigatorMoveFirstItem6.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.bindingNavigatorMoveFirstItem6.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem6.Image")));
-            this.bindingNavigatorMoveFirstItem6.Name = "bindingNavigatorMoveFirstItem";
+            this.bindingNavigatorMoveFirstItem6.Name = "bindingNavigatorMoveFirstItem6";
             this.bindingNavigatorMoveFirstItem6.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorMoveFirstItem6.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMoveFirstItem6.Text = "Переместить в начало";
@@ -1329,14 +1337,14 @@ namespace Lab1
             // 
             this.bindingNavigatorMovePreviousItem6.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.bindingNavigatorMovePreviousItem6.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem6.Image")));
-            this.bindingNavigatorMovePreviousItem6.Name = "bindingNavigatorMovePreviousItem";
+            this.bindingNavigatorMovePreviousItem6.Name = "bindingNavigatorMovePreviousItem6";
             this.bindingNavigatorMovePreviousItem6.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorMovePreviousItem6.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMovePreviousItem6.Text = "Переместить назад";
             // 
             // bindingNavigatorSeparator18
             // 
-            this.bindingNavigatorSeparator18.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator18.Name = "bindingNavigatorSeparator18";
             this.bindingNavigatorSeparator18.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorPositionItem6
@@ -1344,28 +1352,21 @@ namespace Lab1
             this.bindingNavigatorPositionItem6.AccessibleName = "Положение";
             this.bindingNavigatorPositionItem6.AutoSize = false;
             this.bindingNavigatorPositionItem6.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bindingNavigatorPositionItem6.Name = "bindingNavigatorPositionItem";
+            this.bindingNavigatorPositionItem6.Name = "bindingNavigatorPositionItem6";
             this.bindingNavigatorPositionItem6.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem6.Text = "0";
             this.bindingNavigatorPositionItem6.ToolTipText = "Текущее положение";
             // 
-            // bindingNavigatorCountItem6
-            // 
-            this.bindingNavigatorCountItem6.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem6.Size = new System.Drawing.Size(43, 22);
-            this.bindingNavigatorCountItem6.Text = "для {0}";
-            this.bindingNavigatorCountItem6.ToolTipText = "Общее число элементов";
-            // 
             // bindingNavigatorSeparator19
             // 
-            this.bindingNavigatorSeparator19.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator19.Name = "bindingNavigatorSeparator19";
             this.bindingNavigatorSeparator19.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorMoveNextItem6
             // 
             this.bindingNavigatorMoveNextItem6.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.bindingNavigatorMoveNextItem6.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem6.Image")));
-            this.bindingNavigatorMoveNextItem6.Name = "bindingNavigatorMoveNextItem";
+            this.bindingNavigatorMoveNextItem6.Name = "bindingNavigatorMoveNextItem6";
             this.bindingNavigatorMoveNextItem6.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorMoveNextItem6.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMoveNextItem6.Text = "Переместить вперед";
@@ -1374,48 +1375,47 @@ namespace Lab1
             // 
             this.bindingNavigatorMoveLastItem6.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.bindingNavigatorMoveLastItem6.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem6.Image")));
-            this.bindingNavigatorMoveLastItem6.Name = "bindingNavigatorMoveLastItem";
+            this.bindingNavigatorMoveLastItem6.Name = "bindingNavigatorMoveLastItem6";
             this.bindingNavigatorMoveLastItem6.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorMoveLastItem6.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMoveLastItem6.Text = "Переместить в конец";
             // 
             // bindingNavigatorSeparator20
             // 
-            this.bindingNavigatorSeparator20.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator20.Name = "bindingNavigatorSeparator20";
             this.bindingNavigatorSeparator20.Size = new System.Drawing.Size(6, 25);
             // 
-            // bindingNavigatorAddNewItem6
+            // dataGridView7
             // 
-            this.bindingNavigatorAddNewItem6.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem6.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem6.Image")));
-            this.bindingNavigatorAddNewItem6.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem6.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem6.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem6.Text = "Добавить";
+            this.dataGridView7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.dataGridView7.Location = new System.Drawing.Point(0, 24);
+            this.dataGridView7.Name = "dataGridView7";
+            this.dataGridView7.Size = new System.Drawing.Size(792, 150);
+            this.dataGridView7.TabIndex = 1;
             // 
-            // bindingNavigatorDeleteItem6
+            // label1
             // 
-            this.bindingNavigatorDeleteItem6.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem6.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem6.Image")));
-            this.bindingNavigatorDeleteItem6.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem6.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem6.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorDeleteItem6.Text = "Удалить";
+            this.label1.AutoSize = true;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(163, 24);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Load a database...";
             // 
-            // viewToolStripMenuItem
+            // domainsTableAdapter1
             // 
-            this.viewToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.resettlementToolStripMenuItem});
-            this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
-            this.viewToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.viewToolStripMenuItem.Text = "View";
+            this.domainsTableAdapter1.ClearBeforeFill = true;
             // 
-            // resettlementToolStripMenuItem
+            // kingdomTableAdapter1
             // 
-            this.resettlementToolStripMenuItem.Name = "resettlementToolStripMenuItem";
-            this.resettlementToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.resettlementToolStripMenuItem.Text = "Resettlement";
-            this.resettlementToolStripMenuItem.Click += new System.EventHandler(this.resettlementToolStripMenuItem_Click);
+            this.kingdomTableAdapter1.ClearBeforeFill = true;
+            // 
+            // phylumTableAdapter1
+            // 
+            this.phylumTableAdapter1.ClearBeforeFill = true;
             // 
             // Form1
             // 
@@ -1472,10 +1472,10 @@ namespace Lab1
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator7)).EndInit();
             this.bindingNavigator7.ResumeLayout(false);
             this.bindingNavigator7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
