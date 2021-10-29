@@ -89,64 +89,85 @@ namespace Lab1
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.databaseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.domainsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.kingdomsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.phylumsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.bindingNavigator6 = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem5 = new System.Windows.Forms.ToolStripButton();
+            this.phylumBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.bindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.biologistHandbookDataSet1 = new Lab1.BiologistHandbookDataSet1();
-            this.dataGridView4 = new System.Windows.Forms.DataGridView();
-            this.domainsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.domainsTableAdapter1 = new Lab1.BiologistHandbookDataSet1TableAdapters.domainsTableAdapter();
-            this.domainnameDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nucleuspresenceDataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.bindingNavigator4 = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorMoveFirstItem3 = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMovePreviousItem3 = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator9 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorPositionItem3 = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem3 = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorSeparator10 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorMoveNextItem3 = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveLastItem3 = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator11 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem3 = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem3 = new System.Windows.Forms.ToolStripButton();
-            this.dataGridView5 = new System.Windows.Forms.DataGridView();
-            this.kingdomBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.kingdomTableAdapter1 = new Lab1.BiologistHandbookDataSet1TableAdapters.kingdomTableAdapter();
-            this.kingdomnameDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.domainnameDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fertilisationtypesDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bindingNavigator5 = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorMoveFirstItem4 = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMovePreviousItem4 = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator12 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorPositionItem4 = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem4 = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorSeparator13 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorMoveNextItem4 = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveLastItem4 = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator14 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem4 = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem4 = new System.Windows.Forms.ToolStripButton();
-            this.dataGridView6 = new System.Windows.Forms.DataGridView();
-            this.phylumBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.phylumTableAdapter1 = new Lab1.BiologistHandbookDataSet1TableAdapters.phylumTableAdapter();
-            this.phylumnameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.kingdomnameDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cellulardifferentiationDataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.bindingNavigator6 = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorCountItem5 = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem5 = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem5 = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem5 = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator15 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem5 = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem5 = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator16 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem5 = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem5 = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator17 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem5 = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem5 = new System.Windows.Forms.ToolStripButton();
+            this.dataGridView6 = new System.Windows.Forms.DataGridView();
+            this.phylumnameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.kingdomnameDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cellulardifferentiationDataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.bindingNavigator5 = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem4 = new System.Windows.Forms.ToolStripButton();
+            this.kingdomBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.bindingNavigatorCountItem4 = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem4 = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveFirstItem4 = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMovePreviousItem4 = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator12 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorPositionItem4 = new System.Windows.Forms.ToolStripTextBox();
+            this.bindingNavigatorSeparator13 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorMoveNextItem4 = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveLastItem4 = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator14 = new System.Windows.Forms.ToolStripSeparator();
+            this.dataGridView5 = new System.Windows.Forms.DataGridView();
+            this.kingdomnameDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.domainnameDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fertilisationtypesDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bindingNavigator4 = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem3 = new System.Windows.Forms.ToolStripButton();
+            this.domainsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.bindingNavigatorCountItem3 = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem3 = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveFirstItem3 = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMovePreviousItem3 = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator9 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorPositionItem3 = new System.Windows.Forms.ToolStripTextBox();
+            this.bindingNavigatorSeparator10 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorMoveNextItem3 = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveLastItem3 = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator11 = new System.Windows.Forms.ToolStripSeparator();
+            this.dataGridView4 = new System.Windows.Forms.DataGridView();
+            this.domainnameDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nucleuspresenceDataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.label1 = new System.Windows.Forms.Label();
+            this.domainsTableAdapter1 = new Lab1.BiologistHandbookDataSet1TableAdapters.domainsTableAdapter();
+            this.kingdomTableAdapter1 = new Lab1.BiologistHandbookDataSet1TableAdapters.kingdomTableAdapter();
+            this.phylumTableAdapter1 = new Lab1.BiologistHandbookDataSet1TableAdapters.phylumTableAdapter();
+            this.dataGridView7 = new System.Windows.Forms.DataGridView();
+            this.bindingNavigator7 = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorMoveFirstItem6 = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMovePreviousItem6 = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator18 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorPositionItem6 = new System.Windows.Forms.ToolStripTextBox();
+            this.bindingNavigatorCountItem6 = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorSeparator19 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorMoveNextItem6 = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveLastItem6 = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator20 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorAddNewItem6 = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorDeleteItem6 = new System.Windows.Forms.ToolStripButton();
+            this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.resettlementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.biologistHandbookDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -165,20 +186,24 @@ namespace Lab1
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.biologistHandbookDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.domainsBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator4)).BeginInit();
-            this.bindingNavigator4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kingdomBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator5)).BeginInit();
-            this.bindingNavigator5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.phylumBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator6)).BeginInit();
             this.bindingNavigator6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.phylumBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.biologistHandbookDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator5)).BeginInit();
+            this.bindingNavigator5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kingdomBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator4)).BeginInit();
+            this.bindingNavigator4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.domainsBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
+            this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator7)).BeginInit();
+            this.bindingNavigator7.SuspendLayout();
             this.SuspendLayout();
             // 
             // bindingSource1
@@ -658,7 +683,9 @@ namespace Lab1
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem});
+            this.fileToolStripMenuItem,
+            this.databaseToolStripMenuItem,
+            this.viewToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -676,14 +703,46 @@ namespace Lab1
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(93, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
+            // databaseToolStripMenuItem
+            // 
+            this.databaseToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.domainsToolStripMenuItem,
+            this.kingdomsToolStripMenuItem,
+            this.phylumsToolStripMenuItem});
+            this.databaseToolStripMenuItem.Name = "databaseToolStripMenuItem";
+            this.databaseToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
+            this.databaseToolStripMenuItem.Text = "Database";
+            // 
+            // domainsToolStripMenuItem
+            // 
+            this.domainsToolStripMenuItem.Name = "domainsToolStripMenuItem";
+            this.domainsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.domainsToolStripMenuItem.Text = "Domains";
+            this.domainsToolStripMenuItem.Click += new System.EventHandler(this.domainsToolStripMenuItem_Click);
+            // 
+            // kingdomsToolStripMenuItem
+            // 
+            this.kingdomsToolStripMenuItem.Name = "kingdomsToolStripMenuItem";
+            this.kingdomsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.kingdomsToolStripMenuItem.Text = "Kingdoms";
+            this.kingdomsToolStripMenuItem.Click += new System.EventHandler(this.kingdomsToolStripMenuItem_Click);
+            // 
+            // phylumsToolStripMenuItem
+            // 
+            this.phylumsToolStripMenuItem.Name = "phylumsToolStripMenuItem";
+            this.phylumsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.phylumsToolStripMenuItem.Text = "Phylums";
+            this.phylumsToolStripMenuItem.Click += new System.EventHandler(this.phylumsToolStripMenuItem_Click);
             // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 24);
             this.tabControl1.Name = "tabControl1";
@@ -723,6 +782,49 @@ namespace Lab1
             this.tabPage2.Text = "MS SQL Server";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // bindingNavigator6
+            // 
+            this.bindingNavigator6.AddNewItem = this.bindingNavigatorAddNewItem5;
+            this.bindingNavigator6.BindingSource = this.phylumBindingSource1;
+            this.bindingNavigator6.CountItem = this.bindingNavigatorCountItem5;
+            this.bindingNavigator6.DeleteItem = this.bindingNavigatorDeleteItem5;
+            this.bindingNavigator6.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bindingNavigatorMoveFirstItem5,
+            this.bindingNavigatorMovePreviousItem5,
+            this.bindingNavigatorSeparator15,
+            this.bindingNavigatorPositionItem5,
+            this.bindingNavigatorCountItem5,
+            this.bindingNavigatorSeparator16,
+            this.bindingNavigatorMoveNextItem5,
+            this.bindingNavigatorMoveLastItem5,
+            this.bindingNavigatorSeparator17,
+            this.bindingNavigatorAddNewItem5,
+            this.bindingNavigatorDeleteItem5});
+            this.bindingNavigator6.Location = new System.Drawing.Point(3, 503);
+            this.bindingNavigator6.MoveFirstItem = this.bindingNavigatorMoveFirstItem5;
+            this.bindingNavigator6.MoveLastItem = this.bindingNavigatorMoveLastItem5;
+            this.bindingNavigator6.MoveNextItem = this.bindingNavigatorMoveNextItem5;
+            this.bindingNavigator6.MovePreviousItem = this.bindingNavigatorMovePreviousItem5;
+            this.bindingNavigator6.Name = "bindingNavigator6";
+            this.bindingNavigator6.PositionItem = this.bindingNavigatorPositionItem5;
+            this.bindingNavigator6.Size = new System.Drawing.Size(786, 25);
+            this.bindingNavigator6.TabIndex = 5;
+            this.bindingNavigator6.Text = "bindingNavigator6";
+            // 
+            // bindingNavigatorAddNewItem5
+            // 
+            this.bindingNavigatorAddNewItem5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem5.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem5.Image")));
+            this.bindingNavigatorAddNewItem5.Name = "bindingNavigatorAddNewItem5";
+            this.bindingNavigatorAddNewItem5.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem5.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem5.Text = "Добавить";
+            // 
+            // phylumBindingSource1
+            // 
+            this.phylumBindingSource1.DataMember = "phylum";
+            this.phylumBindingSource1.DataSource = this.bindingSource2;
+            // 
             // bindingSource2
             // 
             this.bindingSource2.DataSource = this.biologistHandbookDataSet1;
@@ -733,196 +835,115 @@ namespace Lab1
             this.biologistHandbookDataSet1.DataSetName = "BiologistHandbookDataSet1";
             this.biologistHandbookDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // dataGridView4
+            // bindingNavigatorCountItem5
             // 
-            this.dataGridView4.AutoGenerateColumns = false;
-            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.domainnameDataGridViewTextBoxColumn2,
-            this.nucleuspresenceDataGridViewCheckBoxColumn1});
-            this.dataGridView4.DataSource = this.domainsBindingSource1;
-            this.dataGridView4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.dataGridView4.Location = new System.Drawing.Point(3, 3);
-            this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.Size = new System.Drawing.Size(786, 150);
-            this.dataGridView4.TabIndex = 0;
+            this.bindingNavigatorCountItem5.Name = "bindingNavigatorCountItem5";
+            this.bindingNavigatorCountItem5.Size = new System.Drawing.Size(43, 22);
+            this.bindingNavigatorCountItem5.Text = "для {0}";
+            this.bindingNavigatorCountItem5.ToolTipText = "Общее число элементов";
             // 
-            // domainsBindingSource1
+            // bindingNavigatorDeleteItem5
             // 
-            this.domainsBindingSource1.DataMember = "domains";
-            this.domainsBindingSource1.DataSource = this.bindingSource2;
+            this.bindingNavigatorDeleteItem5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem5.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem5.Image")));
+            this.bindingNavigatorDeleteItem5.Name = "bindingNavigatorDeleteItem5";
+            this.bindingNavigatorDeleteItem5.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem5.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem5.Text = "Удалить";
             // 
-            // domainsTableAdapter1
+            // bindingNavigatorMoveFirstItem5
             // 
-            this.domainsTableAdapter1.ClearBeforeFill = true;
+            this.bindingNavigatorMoveFirstItem5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveFirstItem5.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem5.Image")));
+            this.bindingNavigatorMoveFirstItem5.Name = "bindingNavigatorMoveFirstItem5";
+            this.bindingNavigatorMoveFirstItem5.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveFirstItem5.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveFirstItem5.Text = "Переместить в начало";
             // 
-            // domainnameDataGridViewTextBoxColumn2
+            // bindingNavigatorMovePreviousItem5
             // 
-            this.domainnameDataGridViewTextBoxColumn2.DataPropertyName = "domain_name";
-            this.domainnameDataGridViewTextBoxColumn2.HeaderText = "domain_name";
-            this.domainnameDataGridViewTextBoxColumn2.Name = "domainnameDataGridViewTextBoxColumn2";
+            this.bindingNavigatorMovePreviousItem5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMovePreviousItem5.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem5.Image")));
+            this.bindingNavigatorMovePreviousItem5.Name = "bindingNavigatorMovePreviousItem5";
+            this.bindingNavigatorMovePreviousItem5.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMovePreviousItem5.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMovePreviousItem5.Text = "Переместить назад";
             // 
-            // nucleuspresenceDataGridViewCheckBoxColumn1
+            // bindingNavigatorSeparator15
             // 
-            this.nucleuspresenceDataGridViewCheckBoxColumn1.DataPropertyName = "nucleus_presence";
-            this.nucleuspresenceDataGridViewCheckBoxColumn1.HeaderText = "nucleus_presence";
-            this.nucleuspresenceDataGridViewCheckBoxColumn1.Name = "nucleuspresenceDataGridViewCheckBoxColumn1";
+            this.bindingNavigatorSeparator15.Name = "bindingNavigatorSeparator15";
+            this.bindingNavigatorSeparator15.Size = new System.Drawing.Size(6, 25);
             // 
-            // bindingNavigator4
+            // bindingNavigatorPositionItem5
             // 
-            this.bindingNavigator4.AddNewItem = this.bindingNavigatorAddNewItem3;
-            this.bindingNavigator4.BindingSource = this.domainsBindingSource1;
-            this.bindingNavigator4.CountItem = this.bindingNavigatorCountItem3;
-            this.bindingNavigator4.DeleteItem = this.bindingNavigatorDeleteItem3;
-            this.bindingNavigator4.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bindingNavigatorMoveFirstItem3,
-            this.bindingNavigatorMovePreviousItem3,
-            this.bindingNavigatorSeparator9,
-            this.bindingNavigatorPositionItem3,
-            this.bindingNavigatorCountItem3,
-            this.bindingNavigatorSeparator10,
-            this.bindingNavigatorMoveNextItem3,
-            this.bindingNavigatorMoveLastItem3,
-            this.bindingNavigatorSeparator11,
-            this.bindingNavigatorAddNewItem3,
-            this.bindingNavigatorDeleteItem3});
-            this.bindingNavigator4.Location = new System.Drawing.Point(3, 153);
-            this.bindingNavigator4.MoveFirstItem = this.bindingNavigatorMoveFirstItem3;
-            this.bindingNavigator4.MoveLastItem = this.bindingNavigatorMoveLastItem3;
-            this.bindingNavigator4.MoveNextItem = this.bindingNavigatorMoveNextItem3;
-            this.bindingNavigator4.MovePreviousItem = this.bindingNavigatorMovePreviousItem3;
-            this.bindingNavigator4.Name = "bindingNavigator4";
-            this.bindingNavigator4.PositionItem = this.bindingNavigatorPositionItem3;
-            this.bindingNavigator4.Size = new System.Drawing.Size(786, 25);
-            this.bindingNavigator4.TabIndex = 1;
-            this.bindingNavigator4.Text = "bindingNavigator4";
+            this.bindingNavigatorPositionItem5.AccessibleName = "Положение";
+            this.bindingNavigatorPositionItem5.AutoSize = false;
+            this.bindingNavigatorPositionItem5.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.bindingNavigatorPositionItem5.Name = "bindingNavigatorPositionItem5";
+            this.bindingNavigatorPositionItem5.Size = new System.Drawing.Size(50, 23);
+            this.bindingNavigatorPositionItem5.Text = "0";
+            this.bindingNavigatorPositionItem5.ToolTipText = "Текущее положение";
             // 
-            // bindingNavigatorMoveFirstItem3
+            // bindingNavigatorSeparator16
             // 
-            this.bindingNavigatorMoveFirstItem3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveFirstItem3.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem3.Image")));
-            this.bindingNavigatorMoveFirstItem3.Name = "bindingNavigatorMoveFirstItem";
-            this.bindingNavigatorMoveFirstItem3.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem3.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveFirstItem3.Text = "Переместить в начало";
+            this.bindingNavigatorSeparator16.Name = "bindingNavigatorSeparator16";
+            this.bindingNavigatorSeparator16.Size = new System.Drawing.Size(6, 25);
             // 
-            // bindingNavigatorMovePreviousItem3
+            // bindingNavigatorMoveNextItem5
             // 
-            this.bindingNavigatorMovePreviousItem3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMovePreviousItem3.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem3.Image")));
-            this.bindingNavigatorMovePreviousItem3.Name = "bindingNavigatorMovePreviousItem";
-            this.bindingNavigatorMovePreviousItem3.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem3.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMovePreviousItem3.Text = "Переместить назад";
+            this.bindingNavigatorMoveNextItem5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveNextItem5.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem5.Image")));
+            this.bindingNavigatorMoveNextItem5.Name = "bindingNavigatorMoveNextItem5";
+            this.bindingNavigatorMoveNextItem5.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveNextItem5.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveNextItem5.Text = "Переместить вперед";
             // 
-            // bindingNavigatorSeparator9
+            // bindingNavigatorMoveLastItem5
             // 
-            this.bindingNavigatorSeparator9.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator9.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorMoveLastItem5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveLastItem5.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem5.Image")));
+            this.bindingNavigatorMoveLastItem5.Name = "bindingNavigatorMoveLastItem5";
+            this.bindingNavigatorMoveLastItem5.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveLastItem5.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveLastItem5.Text = "Переместить в конец";
             // 
-            // bindingNavigatorPositionItem3
+            // bindingNavigatorSeparator17
             // 
-            this.bindingNavigatorPositionItem3.AccessibleName = "Положение";
-            this.bindingNavigatorPositionItem3.AutoSize = false;
-            this.bindingNavigatorPositionItem3.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem3.Size = new System.Drawing.Size(50, 23);
-            this.bindingNavigatorPositionItem3.Text = "0";
-            this.bindingNavigatorPositionItem3.ToolTipText = "Текущее положение";
+            this.bindingNavigatorSeparator17.Name = "bindingNavigatorSeparator17";
+            this.bindingNavigatorSeparator17.Size = new System.Drawing.Size(6, 25);
             // 
-            // bindingNavigatorCountItem3
+            // dataGridView6
             // 
-            this.bindingNavigatorCountItem3.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem3.Size = new System.Drawing.Size(43, 22);
-            this.bindingNavigatorCountItem3.Text = "для {0}";
-            this.bindingNavigatorCountItem3.ToolTipText = "Общее число элементов";
+            this.dataGridView6.AutoGenerateColumns = false;
+            this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView6.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.phylumnameDataGridViewTextBoxColumn1,
+            this.kingdomnameDataGridViewTextBoxColumn3,
+            this.cellulardifferentiationDataGridViewCheckBoxColumn1});
+            this.dataGridView6.DataSource = this.phylumBindingSource1;
+            this.dataGridView6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.dataGridView6.Location = new System.Drawing.Point(3, 353);
+            this.dataGridView6.Name = "dataGridView6";
+            this.dataGridView6.Size = new System.Drawing.Size(786, 150);
+            this.dataGridView6.TabIndex = 4;
             // 
-            // bindingNavigatorSeparator10
+            // phylumnameDataGridViewTextBoxColumn1
             // 
-            this.bindingNavigatorSeparator10.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator10.Size = new System.Drawing.Size(6, 25);
+            this.phylumnameDataGridViewTextBoxColumn1.DataPropertyName = "phylum_name";
+            this.phylumnameDataGridViewTextBoxColumn1.HeaderText = "phylum_name";
+            this.phylumnameDataGridViewTextBoxColumn1.Name = "phylumnameDataGridViewTextBoxColumn1";
             // 
-            // bindingNavigatorMoveNextItem3
+            // kingdomnameDataGridViewTextBoxColumn3
             // 
-            this.bindingNavigatorMoveNextItem3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveNextItem3.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem3.Image")));
-            this.bindingNavigatorMoveNextItem3.Name = "bindingNavigatorMoveNextItem";
-            this.bindingNavigatorMoveNextItem3.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem3.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveNextItem3.Text = "Переместить вперед";
+            this.kingdomnameDataGridViewTextBoxColumn3.DataPropertyName = "kingdom_name";
+            this.kingdomnameDataGridViewTextBoxColumn3.HeaderText = "kingdom_name";
+            this.kingdomnameDataGridViewTextBoxColumn3.Name = "kingdomnameDataGridViewTextBoxColumn3";
             // 
-            // bindingNavigatorMoveLastItem3
+            // cellulardifferentiationDataGridViewCheckBoxColumn1
             // 
-            this.bindingNavigatorMoveLastItem3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveLastItem3.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem3.Image")));
-            this.bindingNavigatorMoveLastItem3.Name = "bindingNavigatorMoveLastItem";
-            this.bindingNavigatorMoveLastItem3.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem3.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveLastItem3.Text = "Переместить в конец";
-            // 
-            // bindingNavigatorSeparator11
-            // 
-            this.bindingNavigatorSeparator11.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator11.Size = new System.Drawing.Size(6, 25);
-            // 
-            // bindingNavigatorAddNewItem3
-            // 
-            this.bindingNavigatorAddNewItem3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem3.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem3.Image")));
-            this.bindingNavigatorAddNewItem3.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem3.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem3.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem3.Text = "Добавить";
-            // 
-            // bindingNavigatorDeleteItem3
-            // 
-            this.bindingNavigatorDeleteItem3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem3.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem3.Image")));
-            this.bindingNavigatorDeleteItem3.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem3.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem3.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorDeleteItem3.Text = "Удалить";
-            // 
-            // dataGridView5
-            // 
-            this.dataGridView5.AutoGenerateColumns = false;
-            this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView5.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.kingdomnameDataGridViewTextBoxColumn2,
-            this.domainnameDataGridViewTextBoxColumn3,
-            this.fertilisationtypesDataGridViewTextBoxColumn1});
-            this.dataGridView5.DataSource = this.kingdomBindingSource1;
-            this.dataGridView5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.dataGridView5.Location = new System.Drawing.Point(3, 178);
-            this.dataGridView5.Name = "dataGridView5";
-            this.dataGridView5.Size = new System.Drawing.Size(786, 150);
-            this.dataGridView5.TabIndex = 2;
-            // 
-            // kingdomBindingSource1
-            // 
-            this.kingdomBindingSource1.DataMember = "kingdom";
-            this.kingdomBindingSource1.DataSource = this.bindingSource2;
-            // 
-            // kingdomTableAdapter1
-            // 
-            this.kingdomTableAdapter1.ClearBeforeFill = true;
-            // 
-            // kingdomnameDataGridViewTextBoxColumn2
-            // 
-            this.kingdomnameDataGridViewTextBoxColumn2.DataPropertyName = "kingdom_name";
-            this.kingdomnameDataGridViewTextBoxColumn2.HeaderText = "kingdom_name";
-            this.kingdomnameDataGridViewTextBoxColumn2.Name = "kingdomnameDataGridViewTextBoxColumn2";
-            // 
-            // domainnameDataGridViewTextBoxColumn3
-            // 
-            this.domainnameDataGridViewTextBoxColumn3.DataPropertyName = "domain_name";
-            this.domainnameDataGridViewTextBoxColumn3.HeaderText = "domain_name";
-            this.domainnameDataGridViewTextBoxColumn3.Name = "domainnameDataGridViewTextBoxColumn3";
-            // 
-            // fertilisationtypesDataGridViewTextBoxColumn1
-            // 
-            this.fertilisationtypesDataGridViewTextBoxColumn1.DataPropertyName = "fertilisation_types";
-            this.fertilisationtypesDataGridViewTextBoxColumn1.HeaderText = "fertilisation_types";
-            this.fertilisationtypesDataGridViewTextBoxColumn1.Name = "fertilisationtypesDataGridViewTextBoxColumn1";
+            this.cellulardifferentiationDataGridViewCheckBoxColumn1.DataPropertyName = "cellular_differentiation";
+            this.cellulardifferentiationDataGridViewCheckBoxColumn1.HeaderText = "cellular_differentiation";
+            this.cellulardifferentiationDataGridViewCheckBoxColumn1.Name = "cellulardifferentiationDataGridViewCheckBoxColumn1";
             // 
             // bindingNavigator5
             // 
@@ -953,11 +974,41 @@ namespace Lab1
             this.bindingNavigator5.TabIndex = 3;
             this.bindingNavigator5.Text = "bindingNavigator5";
             // 
+            // bindingNavigatorAddNewItem4
+            // 
+            this.bindingNavigatorAddNewItem4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem4.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem4.Image")));
+            this.bindingNavigatorAddNewItem4.Name = "bindingNavigatorAddNewItem4";
+            this.bindingNavigatorAddNewItem4.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem4.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem4.Text = "Добавить";
+            // 
+            // kingdomBindingSource1
+            // 
+            this.kingdomBindingSource1.DataMember = "kingdom";
+            this.kingdomBindingSource1.DataSource = this.bindingSource2;
+            // 
+            // bindingNavigatorCountItem4
+            // 
+            this.bindingNavigatorCountItem4.Name = "bindingNavigatorCountItem4";
+            this.bindingNavigatorCountItem4.Size = new System.Drawing.Size(43, 22);
+            this.bindingNavigatorCountItem4.Text = "для {0}";
+            this.bindingNavigatorCountItem4.ToolTipText = "Общее число элементов";
+            // 
+            // bindingNavigatorDeleteItem4
+            // 
+            this.bindingNavigatorDeleteItem4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem4.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem4.Image")));
+            this.bindingNavigatorDeleteItem4.Name = "bindingNavigatorDeleteItem4";
+            this.bindingNavigatorDeleteItem4.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem4.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem4.Text = "Удалить";
+            // 
             // bindingNavigatorMoveFirstItem4
             // 
             this.bindingNavigatorMoveFirstItem4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.bindingNavigatorMoveFirstItem4.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem4.Image")));
-            this.bindingNavigatorMoveFirstItem4.Name = "bindingNavigatorMoveFirstItem";
+            this.bindingNavigatorMoveFirstItem4.Name = "bindingNavigatorMoveFirstItem4";
             this.bindingNavigatorMoveFirstItem4.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorMoveFirstItem4.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMoveFirstItem4.Text = "Переместить в начало";
@@ -966,42 +1017,36 @@ namespace Lab1
             // 
             this.bindingNavigatorMovePreviousItem4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.bindingNavigatorMovePreviousItem4.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem4.Image")));
-            this.bindingNavigatorMovePreviousItem4.Name = "bindingNavigatorMovePreviousItem";
+            this.bindingNavigatorMovePreviousItem4.Name = "bindingNavigatorMovePreviousItem4";
             this.bindingNavigatorMovePreviousItem4.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorMovePreviousItem4.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMovePreviousItem4.Text = "Переместить назад";
             // 
             // bindingNavigatorSeparator12
             // 
-            this.bindingNavigatorSeparator12.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator12.Name = "bindingNavigatorSeparator12";
             this.bindingNavigatorSeparator12.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorPositionItem4
             // 
             this.bindingNavigatorPositionItem4.AccessibleName = "Положение";
             this.bindingNavigatorPositionItem4.AutoSize = false;
-            this.bindingNavigatorPositionItem4.Name = "bindingNavigatorPositionItem";
+            this.bindingNavigatorPositionItem4.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.bindingNavigatorPositionItem4.Name = "bindingNavigatorPositionItem4";
             this.bindingNavigatorPositionItem4.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem4.Text = "0";
             this.bindingNavigatorPositionItem4.ToolTipText = "Текущее положение";
             // 
-            // bindingNavigatorCountItem4
-            // 
-            this.bindingNavigatorCountItem4.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem4.Size = new System.Drawing.Size(43, 22);
-            this.bindingNavigatorCountItem4.Text = "для {0}";
-            this.bindingNavigatorCountItem4.ToolTipText = "Общее число элементов";
-            // 
             // bindingNavigatorSeparator13
             // 
-            this.bindingNavigatorSeparator13.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator13.Name = "bindingNavigatorSeparator13";
             this.bindingNavigatorSeparator13.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorMoveNextItem4
             // 
             this.bindingNavigatorMoveNextItem4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.bindingNavigatorMoveNextItem4.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem4.Image")));
-            this.bindingNavigatorMoveNextItem4.Name = "bindingNavigatorMoveNextItem";
+            this.bindingNavigatorMoveNextItem4.Name = "bindingNavigatorMoveNextItem4";
             this.bindingNavigatorMoveNextItem4.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorMoveNextItem4.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMoveNextItem4.Text = "Переместить вперед";
@@ -1010,190 +1055,367 @@ namespace Lab1
             // 
             this.bindingNavigatorMoveLastItem4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.bindingNavigatorMoveLastItem4.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem4.Image")));
-            this.bindingNavigatorMoveLastItem4.Name = "bindingNavigatorMoveLastItem";
+            this.bindingNavigatorMoveLastItem4.Name = "bindingNavigatorMoveLastItem4";
             this.bindingNavigatorMoveLastItem4.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorMoveLastItem4.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMoveLastItem4.Text = "Переместить в конец";
             // 
             // bindingNavigatorSeparator14
             // 
-            this.bindingNavigatorSeparator14.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator14.Name = "bindingNavigatorSeparator14";
             this.bindingNavigatorSeparator14.Size = new System.Drawing.Size(6, 25);
             // 
-            // bindingNavigatorAddNewItem4
+            // dataGridView5
             // 
-            this.bindingNavigatorAddNewItem4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem4.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem4.Image")));
-            this.bindingNavigatorAddNewItem4.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem4.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem4.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem4.Text = "Добавить";
+            this.dataGridView5.AutoGenerateColumns = false;
+            this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView5.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.kingdomnameDataGridViewTextBoxColumn2,
+            this.domainnameDataGridViewTextBoxColumn3,
+            this.fertilisationtypesDataGridViewTextBoxColumn1});
+            this.dataGridView5.DataSource = this.kingdomBindingSource1;
+            this.dataGridView5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.dataGridView5.Location = new System.Drawing.Point(3, 178);
+            this.dataGridView5.Name = "dataGridView5";
+            this.dataGridView5.Size = new System.Drawing.Size(786, 150);
+            this.dataGridView5.TabIndex = 2;
             // 
-            // bindingNavigatorDeleteItem4
+            // kingdomnameDataGridViewTextBoxColumn2
             // 
-            this.bindingNavigatorDeleteItem4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem4.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem4.Image")));
-            this.bindingNavigatorDeleteItem4.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem4.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem4.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorDeleteItem4.Text = "Удалить";
+            this.kingdomnameDataGridViewTextBoxColumn2.DataPropertyName = "kingdom_name";
+            this.kingdomnameDataGridViewTextBoxColumn2.HeaderText = "kingdom_name";
+            this.kingdomnameDataGridViewTextBoxColumn2.Name = "kingdomnameDataGridViewTextBoxColumn2";
             // 
-            // dataGridView6
+            // domainnameDataGridViewTextBoxColumn3
             // 
-            this.dataGridView6.AutoGenerateColumns = false;
-            this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView6.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.phylumnameDataGridViewTextBoxColumn1,
-            this.kingdomnameDataGridViewTextBoxColumn3,
-            this.cellulardifferentiationDataGridViewCheckBoxColumn1});
-            this.dataGridView6.DataSource = this.phylumBindingSource1;
-            this.dataGridView6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.dataGridView6.Location = new System.Drawing.Point(3, 353);
-            this.dataGridView6.Name = "dataGridView6";
-            this.dataGridView6.Size = new System.Drawing.Size(786, 150);
-            this.dataGridView6.TabIndex = 4;
+            this.domainnameDataGridViewTextBoxColumn3.DataPropertyName = "domain_name";
+            this.domainnameDataGridViewTextBoxColumn3.HeaderText = "domain_name";
+            this.domainnameDataGridViewTextBoxColumn3.Name = "domainnameDataGridViewTextBoxColumn3";
             // 
-            // phylumBindingSource1
+            // fertilisationtypesDataGridViewTextBoxColumn1
             // 
-            this.phylumBindingSource1.DataMember = "phylum";
-            this.phylumBindingSource1.DataSource = this.bindingSource2;
+            this.fertilisationtypesDataGridViewTextBoxColumn1.DataPropertyName = "fertilisation_types";
+            this.fertilisationtypesDataGridViewTextBoxColumn1.HeaderText = "fertilisation_types";
+            this.fertilisationtypesDataGridViewTextBoxColumn1.Name = "fertilisationtypesDataGridViewTextBoxColumn1";
+            // 
+            // bindingNavigator4
+            // 
+            this.bindingNavigator4.AddNewItem = this.bindingNavigatorAddNewItem3;
+            this.bindingNavigator4.BindingSource = this.domainsBindingSource1;
+            this.bindingNavigator4.CountItem = this.bindingNavigatorCountItem3;
+            this.bindingNavigator4.DeleteItem = this.bindingNavigatorDeleteItem3;
+            this.bindingNavigator4.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bindingNavigatorMoveFirstItem3,
+            this.bindingNavigatorMovePreviousItem3,
+            this.bindingNavigatorSeparator9,
+            this.bindingNavigatorPositionItem3,
+            this.bindingNavigatorCountItem3,
+            this.bindingNavigatorSeparator10,
+            this.bindingNavigatorMoveNextItem3,
+            this.bindingNavigatorMoveLastItem3,
+            this.bindingNavigatorSeparator11,
+            this.bindingNavigatorAddNewItem3,
+            this.bindingNavigatorDeleteItem3});
+            this.bindingNavigator4.Location = new System.Drawing.Point(3, 153);
+            this.bindingNavigator4.MoveFirstItem = this.bindingNavigatorMoveFirstItem3;
+            this.bindingNavigator4.MoveLastItem = this.bindingNavigatorMoveLastItem3;
+            this.bindingNavigator4.MoveNextItem = this.bindingNavigatorMoveNextItem3;
+            this.bindingNavigator4.MovePreviousItem = this.bindingNavigatorMovePreviousItem3;
+            this.bindingNavigator4.Name = "bindingNavigator4";
+            this.bindingNavigator4.PositionItem = this.bindingNavigatorPositionItem3;
+            this.bindingNavigator4.Size = new System.Drawing.Size(786, 25);
+            this.bindingNavigator4.TabIndex = 1;
+            this.bindingNavigator4.Text = "bindingNavigator4";
+            // 
+            // bindingNavigatorAddNewItem3
+            // 
+            this.bindingNavigatorAddNewItem3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem3.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem3.Image")));
+            this.bindingNavigatorAddNewItem3.Name = "bindingNavigatorAddNewItem3";
+            this.bindingNavigatorAddNewItem3.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem3.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem3.Text = "Добавить";
+            // 
+            // domainsBindingSource1
+            // 
+            this.domainsBindingSource1.DataMember = "domains";
+            this.domainsBindingSource1.DataSource = this.bindingSource2;
+            // 
+            // bindingNavigatorCountItem3
+            // 
+            this.bindingNavigatorCountItem3.Name = "bindingNavigatorCountItem3";
+            this.bindingNavigatorCountItem3.Size = new System.Drawing.Size(43, 22);
+            this.bindingNavigatorCountItem3.Text = "для {0}";
+            this.bindingNavigatorCountItem3.ToolTipText = "Общее число элементов";
+            // 
+            // bindingNavigatorDeleteItem3
+            // 
+            this.bindingNavigatorDeleteItem3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem3.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem3.Image")));
+            this.bindingNavigatorDeleteItem3.Name = "bindingNavigatorDeleteItem3";
+            this.bindingNavigatorDeleteItem3.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem3.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem3.Text = "Удалить";
+            // 
+            // bindingNavigatorMoveFirstItem3
+            // 
+            this.bindingNavigatorMoveFirstItem3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveFirstItem3.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem3.Image")));
+            this.bindingNavigatorMoveFirstItem3.Name = "bindingNavigatorMoveFirstItem3";
+            this.bindingNavigatorMoveFirstItem3.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveFirstItem3.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveFirstItem3.Text = "Переместить в начало";
+            // 
+            // bindingNavigatorMovePreviousItem3
+            // 
+            this.bindingNavigatorMovePreviousItem3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMovePreviousItem3.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem3.Image")));
+            this.bindingNavigatorMovePreviousItem3.Name = "bindingNavigatorMovePreviousItem3";
+            this.bindingNavigatorMovePreviousItem3.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMovePreviousItem3.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMovePreviousItem3.Text = "Переместить назад";
+            // 
+            // bindingNavigatorSeparator9
+            // 
+            this.bindingNavigatorSeparator9.Name = "bindingNavigatorSeparator9";
+            this.bindingNavigatorSeparator9.Size = new System.Drawing.Size(6, 25);
+            // 
+            // bindingNavigatorPositionItem3
+            // 
+            this.bindingNavigatorPositionItem3.AccessibleName = "Положение";
+            this.bindingNavigatorPositionItem3.AutoSize = false;
+            this.bindingNavigatorPositionItem3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.bindingNavigatorPositionItem3.Name = "bindingNavigatorPositionItem3";
+            this.bindingNavigatorPositionItem3.Size = new System.Drawing.Size(50, 23);
+            this.bindingNavigatorPositionItem3.Text = "0";
+            this.bindingNavigatorPositionItem3.ToolTipText = "Текущее положение";
+            // 
+            // bindingNavigatorSeparator10
+            // 
+            this.bindingNavigatorSeparator10.Name = "bindingNavigatorSeparator10";
+            this.bindingNavigatorSeparator10.Size = new System.Drawing.Size(6, 25);
+            // 
+            // bindingNavigatorMoveNextItem3
+            // 
+            this.bindingNavigatorMoveNextItem3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveNextItem3.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem3.Image")));
+            this.bindingNavigatorMoveNextItem3.Name = "bindingNavigatorMoveNextItem3";
+            this.bindingNavigatorMoveNextItem3.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveNextItem3.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveNextItem3.Text = "Переместить вперед";
+            // 
+            // bindingNavigatorMoveLastItem3
+            // 
+            this.bindingNavigatorMoveLastItem3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveLastItem3.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem3.Image")));
+            this.bindingNavigatorMoveLastItem3.Name = "bindingNavigatorMoveLastItem3";
+            this.bindingNavigatorMoveLastItem3.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveLastItem3.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveLastItem3.Text = "Переместить в конец";
+            // 
+            // bindingNavigatorSeparator11
+            // 
+            this.bindingNavigatorSeparator11.Name = "bindingNavigatorSeparator11";
+            this.bindingNavigatorSeparator11.Size = new System.Drawing.Size(6, 25);
+            // 
+            // dataGridView4
+            // 
+            this.dataGridView4.AutoGenerateColumns = false;
+            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.domainnameDataGridViewTextBoxColumn2,
+            this.nucleuspresenceDataGridViewCheckBoxColumn1});
+            this.dataGridView4.DataSource = this.domainsBindingSource1;
+            this.dataGridView4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.dataGridView4.Location = new System.Drawing.Point(3, 3);
+            this.dataGridView4.Name = "dataGridView4";
+            this.dataGridView4.Size = new System.Drawing.Size(786, 150);
+            this.dataGridView4.TabIndex = 0;
+            // 
+            // domainnameDataGridViewTextBoxColumn2
+            // 
+            this.domainnameDataGridViewTextBoxColumn2.DataPropertyName = "domain_name";
+            this.domainnameDataGridViewTextBoxColumn2.HeaderText = "domain_name";
+            this.domainnameDataGridViewTextBoxColumn2.Name = "domainnameDataGridViewTextBoxColumn2";
+            // 
+            // nucleuspresenceDataGridViewCheckBoxColumn1
+            // 
+            this.nucleuspresenceDataGridViewCheckBoxColumn1.DataPropertyName = "nucleus_presence";
+            this.nucleuspresenceDataGridViewCheckBoxColumn1.HeaderText = "nucleus_presence";
+            this.nucleuspresenceDataGridViewCheckBoxColumn1.Name = "nucleuspresenceDataGridViewCheckBoxColumn1";
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.bindingNavigator7);
+            this.tabPage3.Controls.Add(this.dataGridView7);
+            this.tabPage3.Controls.Add(this.label1);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(792, 550);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Choose source";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(163, 24);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Load a database...";
+            // 
+            // domainsTableAdapter1
+            // 
+            this.domainsTableAdapter1.ClearBeforeFill = true;
+            // 
+            // kingdomTableAdapter1
+            // 
+            this.kingdomTableAdapter1.ClearBeforeFill = true;
             // 
             // phylumTableAdapter1
             // 
             this.phylumTableAdapter1.ClearBeforeFill = true;
             // 
-            // phylumnameDataGridViewTextBoxColumn1
+            // dataGridView7
             // 
-            this.phylumnameDataGridViewTextBoxColumn1.DataPropertyName = "phylum_name";
-            this.phylumnameDataGridViewTextBoxColumn1.HeaderText = "phylum_name";
-            this.phylumnameDataGridViewTextBoxColumn1.Name = "phylumnameDataGridViewTextBoxColumn1";
+            this.dataGridView7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.dataGridView7.Location = new System.Drawing.Point(0, 24);
+            this.dataGridView7.Name = "dataGridView7";
+            this.dataGridView7.Size = new System.Drawing.Size(792, 150);
+            this.dataGridView7.TabIndex = 1;
             // 
-            // kingdomnameDataGridViewTextBoxColumn3
+            // bindingNavigator7
             // 
-            this.kingdomnameDataGridViewTextBoxColumn3.DataPropertyName = "kingdom_name";
-            this.kingdomnameDataGridViewTextBoxColumn3.HeaderText = "kingdom_name";
-            this.kingdomnameDataGridViewTextBoxColumn3.Name = "kingdomnameDataGridViewTextBoxColumn3";
+            this.bindingNavigator7.AddNewItem = this.bindingNavigatorAddNewItem6;
+            this.bindingNavigator7.CountItem = this.bindingNavigatorCountItem6;
+            this.bindingNavigator7.DeleteItem = this.bindingNavigatorDeleteItem6;
+            this.bindingNavigator7.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bindingNavigatorMoveFirstItem6,
+            this.bindingNavigatorMovePreviousItem6,
+            this.bindingNavigatorSeparator18,
+            this.bindingNavigatorPositionItem6,
+            this.bindingNavigatorCountItem6,
+            this.bindingNavigatorSeparator19,
+            this.bindingNavigatorMoveNextItem6,
+            this.bindingNavigatorMoveLastItem6,
+            this.bindingNavigatorSeparator20,
+            this.bindingNavigatorAddNewItem6,
+            this.bindingNavigatorDeleteItem6});
+            this.bindingNavigator7.Location = new System.Drawing.Point(0, 174);
+            this.bindingNavigator7.MoveFirstItem = this.bindingNavigatorMoveFirstItem6;
+            this.bindingNavigator7.MoveLastItem = this.bindingNavigatorMoveLastItem6;
+            this.bindingNavigator7.MoveNextItem = this.bindingNavigatorMoveNextItem6;
+            this.bindingNavigator7.MovePreviousItem = this.bindingNavigatorMovePreviousItem6;
+            this.bindingNavigator7.Name = "bindingNavigator7";
+            this.bindingNavigator7.PositionItem = this.bindingNavigatorPositionItem6;
+            this.bindingNavigator7.Size = new System.Drawing.Size(792, 25);
+            this.bindingNavigator7.TabIndex = 2;
+            this.bindingNavigator7.Text = "bindingNavigator7";
             // 
-            // cellulardifferentiationDataGridViewCheckBoxColumn1
+            // bindingNavigatorMoveFirstItem6
             // 
-            this.cellulardifferentiationDataGridViewCheckBoxColumn1.DataPropertyName = "cellular_differentiation";
-            this.cellulardifferentiationDataGridViewCheckBoxColumn1.HeaderText = "cellular_differentiation";
-            this.cellulardifferentiationDataGridViewCheckBoxColumn1.Name = "cellulardifferentiationDataGridViewCheckBoxColumn1";
+            this.bindingNavigatorMoveFirstItem6.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveFirstItem6.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem6.Image")));
+            this.bindingNavigatorMoveFirstItem6.Name = "bindingNavigatorMoveFirstItem";
+            this.bindingNavigatorMoveFirstItem6.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveFirstItem6.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveFirstItem6.Text = "Переместить в начало";
             // 
-            // bindingNavigator6
+            // bindingNavigatorMovePreviousItem6
             // 
-            this.bindingNavigator6.AddNewItem = this.bindingNavigatorAddNewItem5;
-            this.bindingNavigator6.BindingSource = this.phylumBindingSource1;
-            this.bindingNavigator6.CountItem = this.bindingNavigatorCountItem5;
-            this.bindingNavigator6.DeleteItem = this.bindingNavigatorDeleteItem5;
-            this.bindingNavigator6.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bindingNavigatorMoveFirstItem5,
-            this.bindingNavigatorMovePreviousItem5,
-            this.bindingNavigatorSeparator15,
-            this.bindingNavigatorPositionItem5,
-            this.bindingNavigatorCountItem5,
-            this.bindingNavigatorSeparator16,
-            this.bindingNavigatorMoveNextItem5,
-            this.bindingNavigatorMoveLastItem5,
-            this.bindingNavigatorSeparator17,
-            this.bindingNavigatorAddNewItem5,
-            this.bindingNavigatorDeleteItem5});
-            this.bindingNavigator6.Location = new System.Drawing.Point(3, 503);
-            this.bindingNavigator6.MoveFirstItem = this.bindingNavigatorMoveFirstItem5;
-            this.bindingNavigator6.MoveLastItem = this.bindingNavigatorMoveLastItem5;
-            this.bindingNavigator6.MoveNextItem = this.bindingNavigatorMoveNextItem5;
-            this.bindingNavigator6.MovePreviousItem = this.bindingNavigatorMovePreviousItem5;
-            this.bindingNavigator6.Name = "bindingNavigator6";
-            this.bindingNavigator6.PositionItem = this.bindingNavigatorPositionItem5;
-            this.bindingNavigator6.Size = new System.Drawing.Size(786, 25);
-            this.bindingNavigator6.TabIndex = 5;
-            this.bindingNavigator6.Text = "bindingNavigator6";
+            this.bindingNavigatorMovePreviousItem6.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMovePreviousItem6.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem6.Image")));
+            this.bindingNavigatorMovePreviousItem6.Name = "bindingNavigatorMovePreviousItem";
+            this.bindingNavigatorMovePreviousItem6.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMovePreviousItem6.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMovePreviousItem6.Text = "Переместить назад";
             // 
-            // bindingNavigatorMoveFirstItem5
+            // bindingNavigatorSeparator18
             // 
-            this.bindingNavigatorMoveFirstItem5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveFirstItem5.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem5.Image")));
-            this.bindingNavigatorMoveFirstItem5.Name = "bindingNavigatorMoveFirstItem";
-            this.bindingNavigatorMoveFirstItem5.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem5.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveFirstItem5.Text = "Переместить в начало";
+            this.bindingNavigatorSeparator18.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator18.Size = new System.Drawing.Size(6, 25);
             // 
-            // bindingNavigatorMovePreviousItem5
+            // bindingNavigatorPositionItem6
             // 
-            this.bindingNavigatorMovePreviousItem5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMovePreviousItem5.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem5.Image")));
-            this.bindingNavigatorMovePreviousItem5.Name = "bindingNavigatorMovePreviousItem";
-            this.bindingNavigatorMovePreviousItem5.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem5.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMovePreviousItem5.Text = "Переместить назад";
+            this.bindingNavigatorPositionItem6.AccessibleName = "Положение";
+            this.bindingNavigatorPositionItem6.AutoSize = false;
+            this.bindingNavigatorPositionItem6.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.bindingNavigatorPositionItem6.Name = "bindingNavigatorPositionItem";
+            this.bindingNavigatorPositionItem6.Size = new System.Drawing.Size(50, 23);
+            this.bindingNavigatorPositionItem6.Text = "0";
+            this.bindingNavigatorPositionItem6.ToolTipText = "Текущее положение";
             // 
-            // bindingNavigatorSeparator15
+            // bindingNavigatorCountItem6
             // 
-            this.bindingNavigatorSeparator15.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator15.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorCountItem6.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem6.Size = new System.Drawing.Size(43, 22);
+            this.bindingNavigatorCountItem6.Text = "для {0}";
+            this.bindingNavigatorCountItem6.ToolTipText = "Общее число элементов";
             // 
-            // bindingNavigatorPositionItem5
+            // bindingNavigatorSeparator19
             // 
-            this.bindingNavigatorPositionItem5.AccessibleName = "Положение";
-            this.bindingNavigatorPositionItem5.AutoSize = false;
-            this.bindingNavigatorPositionItem5.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bindingNavigatorPositionItem5.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem5.Size = new System.Drawing.Size(50, 23);
-            this.bindingNavigatorPositionItem5.Text = "0";
-            this.bindingNavigatorPositionItem5.ToolTipText = "Текущее положение";
+            this.bindingNavigatorSeparator19.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator19.Size = new System.Drawing.Size(6, 25);
             // 
-            // bindingNavigatorCountItem5
+            // bindingNavigatorMoveNextItem6
             // 
-            this.bindingNavigatorCountItem5.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem5.Size = new System.Drawing.Size(43, 22);
-            this.bindingNavigatorCountItem5.Text = "для {0}";
-            this.bindingNavigatorCountItem5.ToolTipText = "Общее число элементов";
+            this.bindingNavigatorMoveNextItem6.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveNextItem6.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem6.Image")));
+            this.bindingNavigatorMoveNextItem6.Name = "bindingNavigatorMoveNextItem";
+            this.bindingNavigatorMoveNextItem6.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveNextItem6.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveNextItem6.Text = "Переместить вперед";
             // 
-            // bindingNavigatorSeparator16
+            // bindingNavigatorMoveLastItem6
             // 
-            this.bindingNavigatorSeparator16.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator16.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorMoveLastItem6.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveLastItem6.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem6.Image")));
+            this.bindingNavigatorMoveLastItem6.Name = "bindingNavigatorMoveLastItem";
+            this.bindingNavigatorMoveLastItem6.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveLastItem6.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveLastItem6.Text = "Переместить в конец";
             // 
-            // bindingNavigatorMoveNextItem5
+            // bindingNavigatorSeparator20
             // 
-            this.bindingNavigatorMoveNextItem5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveNextItem5.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem5.Image")));
-            this.bindingNavigatorMoveNextItem5.Name = "bindingNavigatorMoveNextItem";
-            this.bindingNavigatorMoveNextItem5.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem5.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveNextItem5.Text = "Переместить вперед";
+            this.bindingNavigatorSeparator20.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator20.Size = new System.Drawing.Size(6, 25);
             // 
-            // bindingNavigatorMoveLastItem5
+            // bindingNavigatorAddNewItem6
             // 
-            this.bindingNavigatorMoveLastItem5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveLastItem5.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem5.Image")));
-            this.bindingNavigatorMoveLastItem5.Name = "bindingNavigatorMoveLastItem";
-            this.bindingNavigatorMoveLastItem5.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem5.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveLastItem5.Text = "Переместить в конец";
+            this.bindingNavigatorAddNewItem6.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem6.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem6.Image")));
+            this.bindingNavigatorAddNewItem6.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem6.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem6.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem6.Text = "Добавить";
             // 
-            // bindingNavigatorSeparator17
+            // bindingNavigatorDeleteItem6
             // 
-            this.bindingNavigatorSeparator17.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator17.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorDeleteItem6.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem6.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem6.Image")));
+            this.bindingNavigatorDeleteItem6.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem6.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem6.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem6.Text = "Удалить";
             // 
-            // bindingNavigatorAddNewItem5
+            // viewToolStripMenuItem
             // 
-            this.bindingNavigatorAddNewItem5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem5.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem5.Image")));
-            this.bindingNavigatorAddNewItem5.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem5.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem5.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem5.Text = "Добавить";
+            this.viewToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.resettlementToolStripMenuItem});
+            this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
+            this.viewToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.viewToolStripMenuItem.Text = "View";
             // 
-            // bindingNavigatorDeleteItem5
+            // resettlementToolStripMenuItem
             // 
-            this.bindingNavigatorDeleteItem5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem5.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem5.Image")));
-            this.bindingNavigatorDeleteItem5.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem5.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem5.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorDeleteItem5.Text = "Удалить";
+            this.resettlementToolStripMenuItem.Name = "resettlementToolStripMenuItem";
+            this.resettlementToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.resettlementToolStripMenuItem.Text = "Resettlement";
+            this.resettlementToolStripMenuItem.Click += new System.EventHandler(this.resettlementToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -1231,23 +1453,29 @@ namespace Lab1
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.biologistHandbookDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.domainsBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator4)).EndInit();
-            this.bindingNavigator4.ResumeLayout(false);
-            this.bindingNavigator4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kingdomBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator5)).EndInit();
-            this.bindingNavigator5.ResumeLayout(false);
-            this.bindingNavigator5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.phylumBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator6)).EndInit();
             this.bindingNavigator6.ResumeLayout(false);
             this.bindingNavigator6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.phylumBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.biologistHandbookDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator5)).EndInit();
+            this.bindingNavigator5.ResumeLayout(false);
+            this.bindingNavigator5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kingdomBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator4)).EndInit();
+            this.bindingNavigator4.ResumeLayout(false);
+            this.bindingNavigator4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.domainsBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator7)).EndInit();
+            this.bindingNavigator7.ResumeLayout(false);
+            this.bindingNavigator7.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1371,6 +1599,27 @@ namespace Lab1
         private System.Windows.Forms.DataGridViewTextBoxColumn phylumnameDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn kingdomnameDataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewCheckBoxColumn cellulardifferentiationDataGridViewCheckBoxColumn1;
+        private System.Windows.Forms.ToolStripMenuItem databaseToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem domainsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem kingdomsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem phylumsToolStripMenuItem;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.BindingNavigator bindingNavigator7;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem6;
+        private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem6;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem6;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem6;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem6;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator18;
+        private System.Windows.Forms.ToolStripTextBox bindingNavigatorPositionItem6;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator19;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem6;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem6;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator20;
+        private System.Windows.Forms.DataGridView dataGridView7;
+        private System.Windows.Forms.ToolStripMenuItem viewToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem resettlementToolStripMenuItem;
     }
 }
 

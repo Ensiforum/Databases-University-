@@ -32,6 +32,8 @@ namespace Lab1
             // TODO: данная строка кода позволяет загрузить данные в таблицу "biologistHandbookDataSet.domains". При необходимости она может быть перемещена или удалена.
             this.domainsTableAdapter.Fill(this.biologistHandbookDataSet.domains);
 
+            dataGridView7.AutoGenerateColumns = true;
+
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
@@ -48,6 +50,36 @@ namespace Lab1
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void domainsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            bindingNavigator7.BindingSource = domainsBindingSource;
+            dataGridView7.DataSource = domainsBindingSource;
+            label1.Text = "Domains";
+        }
+
+        private void kingdomsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            bindingNavigator7.BindingSource = kingdomBindingSource;
+            dataGridView7.DataSource = kingdomBindingSource;
+            label1.Text = "Kingdoms";
+        }
+
+        private void phylumsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            bindingNavigator7.BindingSource = phylumBindingSource;
+            dataGridView7.DataSource = phylumBindingSource;
+            label1.Text = "Phylums";
+        }
+
+        private void resettlementToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var rs = new RSForm();
+            rs.ShowDialog();
+            domainsTableAdapter.Fill(biologistHandbookDataSet.domains);
+            kingdomTableAdapter.Fill(biologistHandbookDataSet.kingdom);
+            phylumTableAdapter.Fill(biologistHandbookDataSet.phylum);
         }
     }
 }
