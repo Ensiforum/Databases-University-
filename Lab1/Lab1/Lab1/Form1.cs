@@ -47,6 +47,8 @@ namespace Lab1
             phylumTableAdapter1.Update(biologistHandbookDataSet1);
         }
 
+
+
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -81,5 +83,6 @@ namespace Lab1
             kingdomTableAdapter.Fill(biologistHandbookDataSet.kingdom);
             phylumTableAdapter.Fill(biologistHandbookDataSet.phylum);
         }
+
     }
 }

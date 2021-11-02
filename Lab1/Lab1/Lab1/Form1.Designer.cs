@@ -52,9 +52,12 @@ namespace Lab1
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.kingdomnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.domainnameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.domainnameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.domainsBindingSource5 = new System.Windows.Forms.BindingSource(this.components);
             this.fertilisationtypesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.kingdomBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.kingdomBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
+            this.kingdomBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.kingdomTableAdapter = new Lab1.BiologistHandbookDataSetTableAdapters.kingdomTableAdapter();
             this.bindingNavigator2 = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem1 = new System.Windows.Forms.ToolStripButton();
@@ -168,6 +171,11 @@ namespace Lab1
             this.domainsTableAdapter1 = new Lab1.BiologistHandbookDataSet1TableAdapters.domainsTableAdapter();
             this.kingdomTableAdapter1 = new Lab1.BiologistHandbookDataSet1TableAdapters.kingdomTableAdapter();
             this.phylumTableAdapter1 = new Lab1.BiologistHandbookDataSet1TableAdapters.phylumTableAdapter();
+            this.domainsBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.kingdomBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.domainsBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.domainsBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
+            this.domainskingdomBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.biologistHandbookDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -175,7 +183,10 @@ namespace Lab1
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.domainsBindingSource5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kingdomBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kingdomBindingSource4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kingdomBindingSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator2)).BeginInit();
             this.bindingNavigator2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
@@ -204,6 +215,11 @@ namespace Lab1
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator7)).BeginInit();
             this.bindingNavigator7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.domainsBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kingdomBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.domainsBindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.domainsBindingSource4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.domainskingdomBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // bindingSource1
@@ -384,14 +400,25 @@ namespace Lab1
             // kingdomnameDataGridViewTextBoxColumn
             // 
             this.kingdomnameDataGridViewTextBoxColumn.DataPropertyName = "kingdom_name";
+            this.kingdomnameDataGridViewTextBoxColumn.Frozen = true;
             this.kingdomnameDataGridViewTextBoxColumn.HeaderText = "kingdom_name";
             this.kingdomnameDataGridViewTextBoxColumn.Name = "kingdomnameDataGridViewTextBoxColumn";
             // 
             // domainnameDataGridViewTextBoxColumn1
             // 
             this.domainnameDataGridViewTextBoxColumn1.DataPropertyName = "domain_name";
+            this.domainnameDataGridViewTextBoxColumn1.DataSource = this.domainsBindingSource5;
+            this.domainnameDataGridViewTextBoxColumn1.DisplayMember = "domain_name";
+            this.domainnameDataGridViewTextBoxColumn1.Frozen = true;
             this.domainnameDataGridViewTextBoxColumn1.HeaderText = "domain_name";
             this.domainnameDataGridViewTextBoxColumn1.Name = "domainnameDataGridViewTextBoxColumn1";
+            this.domainnameDataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.domainnameDataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // domainsBindingSource5
+            // 
+            this.domainsBindingSource5.DataMember = "domains";
+            this.domainsBindingSource5.DataSource = this.bindingSource1;
             // 
             // fertilisationtypesDataGridViewTextBoxColumn
             // 
@@ -403,6 +430,16 @@ namespace Lab1
             // 
             this.kingdomBindingSource.DataMember = "kingdom";
             this.kingdomBindingSource.DataSource = this.bindingSource1;
+            // 
+            // kingdomBindingSource4
+            // 
+            this.kingdomBindingSource4.DataMember = "kingdom";
+            this.kingdomBindingSource4.DataSource = this.bindingSource1;
+            // 
+            // kingdomBindingSource3
+            // 
+            this.kingdomBindingSource3.DataMember = "kingdom";
+            this.kingdomBindingSource3.DataSource = this.bindingSource1;
             // 
             // kingdomTableAdapter
             // 
@@ -1417,6 +1454,31 @@ namespace Lab1
             // 
             this.phylumTableAdapter1.ClearBeforeFill = true;
             // 
+            // domainsBindingSource2
+            // 
+            this.domainsBindingSource2.DataMember = "domains";
+            this.domainsBindingSource2.DataSource = this.bindingSource1;
+            // 
+            // kingdomBindingSource2
+            // 
+            this.kingdomBindingSource2.DataMember = "kingdom";
+            this.kingdomBindingSource2.DataSource = this.bindingSource1;
+            // 
+            // domainsBindingSource3
+            // 
+            this.domainsBindingSource3.DataMember = "domains";
+            this.domainsBindingSource3.DataSource = this.bindingSource1;
+            // 
+            // domainsBindingSource4
+            // 
+            this.domainsBindingSource4.DataMember = "domains";
+            this.domainsBindingSource4.DataSource = this.bindingSource1;
+            // 
+            // domainskingdomBindingSource
+            // 
+            this.domainskingdomBindingSource.DataMember = "domainskingdom";
+            this.domainskingdomBindingSource.DataSource = this.domainsBindingSource;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1437,7 +1499,10 @@ namespace Lab1
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.domainsBindingSource5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kingdomBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kingdomBindingSource4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kingdomBindingSource3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator2)).EndInit();
             this.bindingNavigator2.ResumeLayout(false);
             this.bindingNavigator2.PerformLayout();
@@ -1476,6 +1541,11 @@ namespace Lab1
             this.bindingNavigator7.ResumeLayout(false);
             this.bindingNavigator7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.domainsBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kingdomBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.domainsBindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.domainsBindingSource4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.domainskingdomBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1505,9 +1575,6 @@ namespace Lab1
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.BindingSource kingdomBindingSource;
         private BiologistHandbookDataSetTableAdapters.kingdomTableAdapter kingdomTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn kingdomnameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn domainnameDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fertilisationtypesDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingNavigator bindingNavigator2;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem1;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem1;
@@ -1620,6 +1687,17 @@ namespace Lab1
         private System.Windows.Forms.DataGridView dataGridView7;
         private System.Windows.Forms.ToolStripMenuItem viewToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem resettlementToolStripMenuItem;
+        private System.Windows.Forms.BindingSource domainsBindingSource2;
+        private System.Windows.Forms.BindingSource kingdomBindingSource2;
+        private System.Windows.Forms.BindingSource domainsBindingSource3;
+        private System.Windows.Forms.BindingSource domainsBindingSource4;
+        private System.Windows.Forms.BindingSource kingdomBindingSource3;
+        private System.Windows.Forms.BindingSource kingdomBindingSource4;
+        private System.Windows.Forms.BindingSource domainskingdomBindingSource;
+        private System.Windows.Forms.DataGridViewTextBoxColumn kingdomnameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewComboBoxColumn domainnameDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.BindingSource domainsBindingSource5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fertilisationtypesDataGridViewTextBoxColumn;
     }
 }
 
